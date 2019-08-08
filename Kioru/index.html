@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <script src="static/script.js"></script>
+    <link rel="stylesheet" href="static/styles.css">
+    <title>Piedra, papel o tijera</title>
+</head>
+<body>
+    <div id="padre">
+        <div class="login-page">
+            <h1>Bienvenido</h1>
+            <h4>El primero en lograr 3 victorias gana</h4>
+                <div class="form">
+                    <form class="login-form">
+                        <input type="text" placeholder="Ingresa tu nombre" id="name"/>
+                        <button onclick="pr()">Entrar</button>
+                    </form>
+                </div>            
+        </div>  
+    </div>
+
+
+    <div id="juego" class="juego">
+        <table class="greenTable">
+            <tr>
+                <th>Elige</th>
+                <th></th>
+                <th>Marcador</th>
+            </tr>
+            <tr>
+                <th><a href="#" onclick="juego(0)"><img src="static/img/piedra.jpg" width="100"></a></th>
+                <th></th>
+                <th><h2 id="setNombre">Humano:</h2> <h2 id="puntU">0</h2> </th>
+            </tr>
+            <tr>
+                <th><a href="#" onclick="juego(1)"><img src="static/img/papel.jpg" width="100"></a></th>
+                <th>V.S.</th>
+                <th><a><img src="static/img/sig.png" width="100" id="opcionCPU"></a></th>
+            </tr>
+            <tr>
+                <th><a href="#" onclick="juego(2)"><img src="static/img/tijera.jpg" width="100"></a></th>
+                <th></th>
+                <th><h2>CPU: </h2> <h2 id="puntCPU">0</h2></th>
+            </tr>
+        </table>        
+    </div>
+    
+</body>
+</html>
